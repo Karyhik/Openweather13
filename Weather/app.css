@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid
+{
+    background-image: url(icons/bg7.jpg);
+    background-size: cover;
+    height: auto;
+}
+.row
+{
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+}
+.header
+{
+    background-image: url(icons/header.jpg);
+    background-size: cover;
+    background-position: relative;
+    color: rgb(12,11,6);
+    text-align: center;
+    padding: 5rem;
+
+}
+.header h1
+{
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Lato,Arial;
+    color: #e4eff7;
+}
+
+.header p
+{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.5 rem;
+    color: #e4eff7;
+    font-family: Lato,Arial;
+}
+a:hover,a:visited,a:link,a:active
+{
+ text-decoration: none;
+ color: #d0e5f5;
+}
+.main
+{
+    background-color: #212121;
+}
+.inputs
+{
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.inputs input[type="text"]
+{
+  height: 3.5rem;
+  width: 30rem;
+  background: #212121;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  color: #16a864;
+  font-family: Lato,Arial;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.inputs input[type="submit"]
+{
+   height: 3.5rem;
+   width: 6rem;
+   background: #16a864;
+   color: ghostwhite;
+   font-size: 1.1rem;
+   font-weight: 600;
+   border: none;
+   font-family: Lato,Arial;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.display
+{
+    text-align: center;
+    color: #16a864;
+}
+.wrapper
+{
+    margin: 0 9rem;
+    width: 50%;
+    background: #212121;
+    height: 40vh;
+    margin: 50px auto;
+    border-radius: 2px;
+}
+.symb
+{
+    color: red;
+}
+.wrapper h2
+{
+    padding: 5px 0;
+    text-align: center;
+    font-family: Lato,Arial;
+}
+.wrapper p
+{
+   text-align: center;
+   margin: 10px auto;
+   font-size: 20px;
+   font-family: Lato,Arial;
+}

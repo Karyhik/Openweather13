@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle button</title>
+
+    <style>
+        .toggle
+        {
+            background-color: rgb(220,220,220);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .is-toggled
+        {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <button class="toggle js-toggle1"
+    onclick="toggleOnoff('.js-toggle1');">
+        Gaming
+    </button>
+
+    <button class="toggle js-toggle2"
+    onclick="toggleOnoff('.js-toggle2');">
+        Music
+    </button>
+
+    <button class="toggle js-toggle3"
+    onclick="toggleOnoff('.js-toggle3');">
+        Tech
+    </button>
+
+    <script>
+
+        function toggleOnoff(selector)
+        {
+          const buttEle = document.querySelector(selector);
+          if(!buttEle.classList.contains('is-toggled'))
+           {
+            turnOffPrev(); // calling the function
+              buttEle.classList.add('is-toggled');
+           }
+           else
+           {
+               buttEle.classList.remove('is-toggled');
+            }
+        }
+
+        function turnOffPrev()
+        {
+            const prevButt = document.querySelector('.is-toggled');
+            if(prevButt) //if prev button in already turned on
+            {
+                prevButt.classList.remove('is-toggled');// then we should turn off the button by removing the class toggled
+            }
+        }
+       
+       
+    </script>
+</body>
+</html>

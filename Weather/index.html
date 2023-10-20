@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row offset-sm-1">
+            <section class="header col-md-4 col-sm-10">
+            <h1>Weather-viewer</h1>
+           <p>Code with <span class="symb">&#9829;</span> By <a  href="https://www.github.com/Karyhik" target="_blank">Karthik</a></p>
+            </section>
+
+            <section class="main col-md-10 col-sm-10">
+                <section class="inputs">
+                 <input type="text" placeholder="Enter any city..." id="cityinput">
+                 <input type="submit" value="Submit" id="add">
+                </section>
+
+                <section class="display">
+                    <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                    </div>
+
+                </section>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="app.js">
+
+    </script>
+    
+</body>
+</html>

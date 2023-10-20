@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Put</title>
+    <style>
+        .align
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="align">Javascript's Fetch Api</h1>
+    <h2 class="align">PUT Method</h2>
+    <!-- <h3>It is used to update the value of existing resources </h3> -->
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/todos/45',
+        {
+           method: 'PUT',
+           headers: {'content-type':'application/json'},
+           body:JSON.stringify({
+            userId:5,
+            id:68,
+            title:"Learn Javascripts fetch api",
+            completed:false
+           })
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+    </script>
+</body>
+</html>

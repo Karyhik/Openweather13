@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="stylesheet" href="cal.css">
+    </head>
+
+    <body>
+        <!-- <h3 class="headh1">Calculator</h3> -->
+        <div class="container">
+            <p class="js-calcu calculation"></p>
+
+          <p>
+            <button class="calculater-button gray-button"
+            onclick="calciMath('1');">
+                1
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('2');">
+                2
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('3');">
+                3
+            </button>
+
+            <button class="calculater-button orange-button"
+            onclick="calciMath('+');">
+                +
+            </button>
+        </p>
+
+        
+        <p>
+            <button class="calculater-button gray-button"
+            onclick="calciMath('4');">
+                4
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('5');">
+                5
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('6')">
+                6
+            </button>
+
+            <button class="calculater-button orange-button"
+            onclick="calciMath('-');">
+                -
+            </button>
+        </p>
+
+        <p>
+            <button class="calculater-button gray-button"
+            onclick="calciMath('7');">
+                7
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('8');">
+                8
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('9');">
+                9
+            </button>
+
+            <button class="calculater-button orange-button"
+            onclick="calciMath('*')">
+                *
+            </button>
+        </p>
+
+        <p>
+            <button class="calculater-button gray-button"
+            onclick="calciMath('0')">
+                0
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calciMath('.')">
+                .
+            </button>
+
+            <button class="calculater-button gray-button"
+            onclick="calculation=eval(calculation)
+            displayOnPage();  //instead of displying it on console we are displaying on page
+            localStorage.setItem('calculation',calculation);">
+                =
+            </button>
+
+            <button class="calculater-button orange-button"
+            onclick="calciMath('/')">
+                /
+            </button
+        </p>
+
+        <p>
+            <button class=" calcu"
+            onclick="calculation=''
+            displayOnPage();
+            localStorage.setItem('calculation',calculation);">
+                Clear
+            </button>
+        </p>
+        </div>
+            
+
+        
+
+             
+        
+        <script src="cal.js">
+        
+        </script>
+    </body>
+</html>
